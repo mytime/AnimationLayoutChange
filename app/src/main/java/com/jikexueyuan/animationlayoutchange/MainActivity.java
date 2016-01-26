@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
@@ -64,7 +65,10 @@ public class MainActivity extends AppCompatActivity {
         rootView.addView(btn);
 
         //自定义动画效果
-
+        //移位动画
+//        TranslateAnimation ta = new TranslateAnimation(0,200,0,200);
+//        ta.setDuration(1000);
+//        btn.startAnimation(ta);
 
         //按钮的监听事件
         btn.setOnClickListener(btn_onclicklistener);
